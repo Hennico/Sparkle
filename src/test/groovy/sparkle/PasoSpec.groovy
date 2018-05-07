@@ -17,7 +17,7 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
             this.estado = estadoInicial
         }
     }
-    
+
     def "cuando creo un nuevo paso no tiene tareas" () {
         given: "nada"
         when: "creo nuevo paso"
@@ -25,7 +25,7 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
         then: "no tiene tareas"
             paso.tareas.size == 0
     }
-    
+
     def "cuando creo un nuevo paso no tiene nombre" () {
         given: "nada"
         when: "creo nuevo paso"
@@ -33,7 +33,7 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
         then: "no tiene nombre"
             paso.nombre == null
     }
-    
+
     def "cuando creo un nuevo paso no tiene paso anterior" () {
         given: "nada"
         when: "creo nuevo paso"
@@ -41,7 +41,7 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
         then: "no tiene paso anterior"
             paso.pasoAnterior == null
     }
-    
+
     def "dado un paso cuando agrego una tarea la agrega a sus tareas" () {
         given: "un paso y una tarea"
             def paso = new Paso()
@@ -51,7 +51,7 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
         then: "se agrego la tarea"
             paso.tareas.any {it == tarea}
     }
-    
+
     def "dado un paso con una tarea no iniciada cuando agrego una tarea la agrega" () {
         given: "un paso con una tarea"
             def paso = new Paso()
@@ -63,7 +63,7 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
         then: "agrega la tarea"
             paso.tareas.any {it == otraTarea}
     }
-    
+
     def "dado un paso con una tarea en ejecucion cuando agrego una tarea tarea no lo permite" () {
         given: "un paso con una tarea en ejecucion"
             def paso = new Paso()
@@ -76,7 +76,7 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
             thrown(Exception)
             !paso.tareas.any {it == otraTarea}
     }
-    
+
     def "dado un paso con una tarea finalizada cuando agrego una tarea no lo permite" () {
         given: "un paso con tarea finalizada"
             def paso = new Paso()
@@ -89,7 +89,7 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
             thrown(Exception)
             !paso.tareas.any {it == otraTarea}
     }
-    
+
     def "dado un paso con una tarea cancelada cuando se agrega otra lo permite" () {
         given: "un paso con tarea cancelada"
             def paso = new Paso()
@@ -101,7 +101,7 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
         then: "agrega la tarea"
             paso.tareas.any {it == otraTarea}
     }
-    
+
     def "dado un paso nuevo cuando le asigno precursor se agrega el paso anterior" () {
         given: "un paso nuevo"
             def primerPaso = new Paso()
@@ -239,7 +239,7 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
         when: "Obtengo el estado"
             def estado = paso.estado
         then: "El estado es no ejecucion"
-            estado == Estado.NoIniciada
+            estado == Estado.EnEjecucion
     }
 
     def """

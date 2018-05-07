@@ -12,6 +12,8 @@ class Tarea {
 	void cambiarEstado(Estado nuevoEstado) {
 		validarTransicionA(nuevoEstado)
 		estado = nuevoEstado
+		if (paso != null)
+			paso.informar()
 	}
 	void asignarPaso(Paso paso) {
 		this.paso = paso
@@ -25,8 +27,8 @@ class Tarea {
 		if (esMismoEstado || estaConcluida || finalizaNoIniciada || desinicia || elPasoNoPermite)
 			fallarCambioEstado()
 	}
-	private void fallarCambioEstado() { 
-		throw new CambioEstadoInvalidoException() 
+	private void fallarCambioEstado() {
+		throw new CambioEstadoInvalidoException()
 	}
 
     static constraints = {
