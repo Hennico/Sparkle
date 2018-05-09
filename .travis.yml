@@ -1,6 +1,6 @@
 language: groovy
 
 before_install:
- - sudo apt-get install grails-3.3.x # or the grails version.
+ - sudo apt-get install grails 3.3.0 # or the grails version.
 
 script: grails test-app
