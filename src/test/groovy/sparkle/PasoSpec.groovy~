@@ -18,6 +18,15 @@ class PasoSpec extends Specification implements DomainUnitTest<Paso> {
         }
     }
 
+    def "fallar" () {
+        given: "nada"
+        when: "creo nuevo paso"
+            def paso = new Paso()
+        then: "no tiene tareas"
+            paso.tareas.size == 1
+    }
+
+
     def "cuando creo un nuevo paso no tiene tareas" () {
         given: "nada"
         when: "creo nuevo paso"
