@@ -4,7 +4,7 @@ class Proceso {
 	String nombre
 	Estado estado
 
-	List<Paso> pasos
+	static hasMany = [pasos: Paso]
 
 	Proceso () {
 		estado = Estado.NoIniciada

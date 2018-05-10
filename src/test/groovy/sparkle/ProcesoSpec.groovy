@@ -24,7 +24,7 @@ class ProcesoSpec extends Specification implements DomainUnitTest<Proceso> {
         when: "creo nuevo proceso"
             def proceso = new Proceso()
         then: "no tiene pasos"
-            proceso.pasos.size == 0
+            proceso.pasos.size() == 0
     }
     
     void "dado un nuevo proceso cuando agrego un paso entonces el paso se agrega" () {
