@@ -4,7 +4,6 @@ class Paso {
 	String nombre
 	Paso pasoAnterior
 	Estado estado
-
 	
 	static hasMany = [tareas: Tarea]
 
@@ -50,5 +49,6 @@ class Paso {
 
     static constraints = {
 		nombre blank:false, nullable: false
+		pasoAnterior nullable: true
     }
 }

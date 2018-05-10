@@ -16,8 +16,8 @@ class Tarea {
 		if (paso != null)
 			paso.informar()
 	}
-	void asignarPaso(Paso paso) {
-		this.paso = paso
+	void asignarPaso(Paso pasoNuevo) {
+		paso = pasoNuevo
 	}
 	private void validarTransicionA(Estado nuevoEstado) {
 		def esMismoEstado      = estado == nuevoEstado
@@ -34,5 +34,7 @@ class Tarea {
 
     static constraints = {
 		nombre blank:false, nullable:false
+		descripcion blank:false, nullable:false
+		paso nullable:true
     }
 }

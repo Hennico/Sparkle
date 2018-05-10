@@ -9,16 +9,16 @@ class BootStrap {
     	def tareaUno = new Tarea(nombre: "primera tarea", descripcion: "hacer algo")
     	def tareaDos = new Tarea(nombre: "segunda tarea", descripcion: "hacer otra cosa")
 
+    	proceso.agregarPaso(pasoUno)
+    	proceso.agregarPaso(pasoDos)
+    	pasoUno.agregarTarea(tareaUno)
+    	pasoDos.agregarTarea(tareaDos)
+
     	proceso.save()
-    	pasoUno.save()
-    	pasoDos.save()
+		pasoUno.save()
+		pasoDos.save()
     	tareaUno.save()
     	tareaDos.save()
-
-    	//proceso.agregarPaso(pasoUno)
-    	//proceso.agregarPaso(pasoDos)
-    	//pasoUno.agregarTarea(tareaUno)
-    	//pasoDos.agregarTarea(tareaDos)
     }
     def destroy = {
     }
