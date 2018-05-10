@@ -5,7 +5,7 @@ class Paso {
 	String nombre
 	Paso pasoAnterior
 	Estado estado = Estado.NoIniciada
-	List<Tarea> tareas
+	static hasMany = [tareas: Tarea]
 
 	Paso () {
 		estado = Estado.NoIniciada

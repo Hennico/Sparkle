@@ -4,7 +4,8 @@ class Tarea {
 	String nombre
 	String descripcion
 	Estado estado
-	Paso paso
+	
+	static belongsTo = [paso: Paso]
 
 	public Tarea() {
 		estado = Estado.NoIniciada
