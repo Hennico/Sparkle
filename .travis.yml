@@ -1,4 +1,6 @@
 language: groovy
-script:
+install:
 - gradle assemble
 - gradle check
+script:
+- grails test-app
