@@ -18,6 +18,6 @@ class Proceso {
 	}
 
     static constraints = {
-    	nombre nullable:false, blank:false 
+    	nombre nullable:false, blank:false
     }
 }

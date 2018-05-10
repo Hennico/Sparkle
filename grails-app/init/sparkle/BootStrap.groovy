@@ -14,6 +14,8 @@ class BootStrap {
     	pasoUno.agregarTarea(tareaUno)
     	pasoDos.agregarTarea(tareaDos)
 
+        tareaUno.cambiarEstado(Estado.EnEjecucion)
+
     	proceso.save()
 		pasoUno.save()
 		pasoDos.save()
