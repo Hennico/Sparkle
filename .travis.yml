@@ -7,12 +7,7 @@ env:
   - GRAILS_VERSION=3.3.0
 
 before_install:
-- rm -rf ~/.gvm
-- curl -s get.gvmtool.net > ~/install_gvm.sh
-- chmod 775 ~/install_gvm.sh
-- ~/install_gvm.sh
-- source ~/.gvm/bin/gvm-init.sh
-- gvm install grails $GRAILS_VERSION || true
+- sudo apt-get install grails $GRAILS_VERSION || true
 
 branches:
   only:
