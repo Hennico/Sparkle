@@ -17,6 +17,14 @@ class TareaSpec extends Specification implements DomainUnitTest<Tarea> {
         }
     }
 
+    def "cuando creo una tarea con nombre inicial la tarea esta en estado no iniciada" () {
+        given: "nada"
+        when: "creo una tarea inicializador de grails"
+            def tarea = new Tarea(nombre:"tarea", desctipcion:"tarea")
+        then: "estado no iniciada"
+            tarea.estado == Estado.NoIniciada
+    }
+
     def "cuando creo una tarea el estado es no iniciada"() {
 		given: "dado nada"
 		when: "creo una tarea"

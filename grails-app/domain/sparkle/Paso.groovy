@@ -1,10 +1,11 @@
 package sparkle
 
 class Paso {
-	int orden
 	String nombre
 	Paso pasoAnterior
-	Estado estado = Estado.NoIniciada
+	Estado estado
+
+	
 	static hasMany = [tareas: Tarea]
 
 	Paso () {
@@ -39,18 +40,15 @@ class Paso {
 	def void informar (){
 		estado = Estado.NoIniciada
 		if (this.estaIniciado())
-					estado = Estado.EnEjecucion
+			estado = Estado.EnEjecucion
 		if (estaTerminado())
-					estado = Estado.Finalizada
+			estado = Estado.Finalizada
 		if (tareas.every {it.estado == Estado.Cancelada })
-					estado = Estado.Cancelada
+			estado = Estado.Cancelada
 	}
 
 
     static constraints = {
-    	orden blank:false, nullable: false
 		nombre blank:false, nullable: false
-		pasoAnterior blank:false, nullable: false
-		estado blank:false, nullable: false
     }
 }

@@ -34,6 +34,5 @@ class Tarea {
 
     static constraints = {
 		nombre blank:false, nullable:false
-		estado nullable:false
     }
 }
