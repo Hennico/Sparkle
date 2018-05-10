@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sparkle.PasoSpec" tests="24" skipped="0" failures="0" errors="0" timestamp="2018-05-07T15:48:48" hostname="Necronomicon" time="0.11">
+  <properties/>
+  <testcase name="cuando creo un nuevo paso no tiene tareas" classname="sparkle.PasoSpec" time="0.043"/>
+  <testcase name="cuando creo un nuevo paso no tiene nombre" classname="sparkle.PasoSpec" time="0.001"/>
+  <testcase name="cuando creo un nuevo paso no tiene paso anterior" classname="sparkle.PasoSpec" time="0.001"/>
+  <testcase name="dado un paso cuando agrego una tarea la agrega a sus tareas" classname="sparkle.PasoSpec" time="0.009"/>
+  <testcase name="dado un paso con una tarea no iniciada cuando agrego una tarea la agrega" classname="sparkle.PasoSpec" time="0.006"/>
+  <testcase name="dado un paso con una tarea en ejecucion cuando agrego una tarea tarea no lo permite" classname="sparkle.PasoSpec" time="0.007"/>
+  <testcase name="dado un paso con una tarea finalizada cuando agrego una tarea no lo permite" classname="sparkle.PasoSpec" time="0.002"/>
+  <testcase name="dado un paso con una tarea cancelada cuando se agrega otra lo permite" classname="sparkle.PasoSpec" time="0.004"/>
+  <testcase name="dado un paso nuevo cuando le asigno precursor se agrega el paso anterior" classname="sparkle.PasoSpec" time="0.001"/>
+  <testcase name="Dado un paso Cuando agrego una tarea El paso se asigna a la tarea" classname="sparkle.PasoSpec" time="0.001"/>
+  <testcase name="Dado un paso sin paso anterior Cuando pregunto si permite cambio Entonces regresa verdadero" classname="sparkle.PasoSpec" time="0.001"/>
+  <testcase name="Dado un paso con un paso anterior no completado Cuando pregunto si permite cambio Entonces regresa falso" classname="sparkle.PasoSpec" time="0.002"/>
+  <testcase name="Dado un paso con un paso anterior completado Cuando pregunto si permite cambio Entonces regresa verdadero" classname="sparkle.PasoSpec" time="0.004"/>
+  <testcase name="Dado un paso nuevo Cuando obtenes su estado Entonces su estado es no iniciado" classname="sparkle.PasoSpec" time="0.0"/>
+  <testcase name="Dado un paso dos tareas no iniciadas Cuando obtenes su estado Entonces su estado es no iniciado" classname="sparkle.PasoSpec" time="0.003"/>
+  <testcase name="&#10;        Dado un paso con una tarea no iniciada y otra en ejecucion&#10;        Cuando obtenes su estado&#10;        Entonces su estado es en ejecucion&#10;    " classname="sparkle.PasoSpec" time="0.006"/>
+  <testcase name="&#10;        Dado un paso con una tarea no iniciada y otra finalizada&#10;        Cuando obtenes su estado&#10;        Entonces su estado es en ejecucion&#10;    " classname="sparkle.PasoSpec" time="0.003"/>
+  <testcase name="&#10;        Dado un paso con una tarea no iniciada y otra cancelada&#10;        Cuando obtenes su estado&#10;        Entonces su estado es en ejecucion&#10;    " classname="sparkle.PasoSpec" time="0.003"/>
+  <testcase name="&#10;        Dado un paso con dos tareas en ejecucion&#10;        Cuando obtenes su estado&#10;        Entonces su estado es en ejecucion&#10;    " classname="sparkle.PasoSpec" time="0.001"/>
+  <testcase name="&#10;        Dado un paso con una tarea en ejecucion y otra finalizada&#10;        Cuando obtenes su estado&#10;        Entonces su estado es en ejecucion&#10;    " classname="sparkle.PasoSpec" time="0.002"/>
+  <testcase name="&#10;        Dado un paso con una tarea en ejecucion y otra cancelada&#10;        Cuando obtenes su estado&#10;        Entonces su estado es en ejecucion&#10;    " classname="sparkle.PasoSpec" time="0.001"/>
+  <testcase name="&#10;        Dado un paso con dos tareas finalizadas&#10;        Cuando obtenes su estado&#10;        Entonces su estado es finalizada&#10;    " classname="sparkle.PasoSpec" time="0.002"/>
+  <testcase name="&#10;        Dado un paso con una tarea finalizada y otra cancelada&#10;        Cuando obtenes su estado&#10;        Entonces su estado es finalizada&#10;    " classname="sparkle.PasoSpec" time="0.001"/>
+  <testcase name="&#10;        Dado un paso con dos tareas canceladas&#10;        Cuando obtenes su estado&#10;        Entonces su estado cancelada&#10;    " classname="sparkle.PasoSpec" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

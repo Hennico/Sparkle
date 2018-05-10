@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sparkle.CambiarEstadoDeUnaTareaDentroDeUnProcesoSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-07T15:48:48" hostname="Necronomicon" time="0.013">
+  <properties/>
+  <testcase name="&#10;    &#9;Dado un proceso con dos tareas en dos pasos distintos ambos pendientes&#10;    &#9;Cuando queres cambiar el estado de la tarea en el segundo pasos&#10;    &#9;Entonces lanza un error y no permite el cambio&#10;    " classname="sparkle.CambiarEstadoDeUnaTareaDentroDeUnProcesoSpec" time="0.005"/>
+  <testcase name="&#10;    &#9;Dado un proceso con dos tareas en dos pasos distintos ambos pendientes&#10;    &#9;Cuando queres cambiar el estado de la tarea en el primer pasos&#10;    &#9;Entonces el estado de la tarea se actualiza&#10;    " classname="sparkle.CambiarEstadoDeUnaTareaDentroDeUnProcesoSpec" time="0.001"/>
+  <testcase name="&#10;    &#9;Dado un proceso con dos tareas en dos pasos distintos el primero terminado&#10;    &#9;Cuando queres cambiar el estado de la tarea en el segundo pasos&#10;    &#9;Entonces el estado de la tarea se actualiza&#10;    " classname="sparkle.CambiarEstadoDeUnaTareaDentroDeUnProcesoSpec" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

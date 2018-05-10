@@ -1,0 +1,6 @@
+#Mon, 07 May 2018 11:41:56 -0300
+
+info.app.version=0.1
+info.app.name=Sparkle
+grails.env=test
+info.app.grailsVersion=3.3.0

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sparkle.TareaSpec" tests="19" skipped="0" failures="0" errors="0" timestamp="2018-05-07T15:48:48" hostname="Necronomicon" time="0.023">
+  <properties/>
+  <testcase name="cuando creo una tarea el estado es no iniciada" classname="sparkle.TareaSpec" time="0.001"/>
+  <testcase name="Dada una tarea nueva Cuando asigno un paso Entonces el paso queda asignado" classname="sparkle.TareaSpec" time="0.001"/>
+  <testcase name="&#10;        Dada una tarea asignada a un paso que no permite cambios&#10;        Cuanto quiero cambiar el estado&#10;        Entonces un error no me lo permite&#10;    " classname="sparkle.TareaSpec" time="0.007"/>
+  <testcase name="dada una tarea en no iniciada cuando cambio al estado no iniciada no permite el cambio" classname="sparkle.TareaSpec" time="0.0"/>
+  <testcase name="dada una tarea en no iniciada cuando cambio al estado en ejecucion se realiza el cambio" classname="sparkle.TareaSpec" time="0.001"/>
+  <testcase name="dada una tarea en no iniciada cuando cambio al estado cancelada se realiza el cambio" classname="sparkle.TareaSpec" time="0.001"/>
+  <testcase name="dada una tarea no iniciada cuando cambio su estado a finalizada no permite el cambio" classname="sparkle.TareaSpec" time="0.001"/>
+  <testcase name="dada una tarea en ejecucion cuando cambio su estado a no iniciada no permite el cambio" classname="sparkle.TareaSpec" time="0.0"/>
+  <testcase name="dada una tarea en ejecucion cuando cambio su estado a en ejecucion no permite el cambio" classname="sparkle.TareaSpec" time="0.001"/>
+  <testcase name="dada una trea en ejecucion cuando cambio su estado a cancelada se realiza el cambio" classname="sparkle.TareaSpec" time="0.001"/>
+  <testcase name="dada una tarea en ejecucion cuando cambio su estado a finalizada se realiza el cambio" classname="sparkle.TareaSpec" time="0.0"/>
+  <testcase name="dada una tarea finalizada cuando cambio su estado a no iniciada no permite el cambio" classname="sparkle.TareaSpec" time="0.002"/>
+  <testcase name="dada una tarea finalizada cuando cambio su estado a en ejecucion no permite el cambio" classname="sparkle.TareaSpec" time="0.0"/>
+  <testcase name="dada una tarea finalizada cuando cambio su estado a cancelada no permite el cambio" classname="sparkle.TareaSpec" time="0.0"/>
+  <testcase name="dada una tarea finalizada cuando cambio su estado a finalizada no permite el cambio" classname="sparkle.TareaSpec" time="0.001"/>
+  <testcase name="dada una tarea cancelada cuando cambio su estado a no iniciada no permite el cambio" classname="sparkle.TareaSpec" time="0.001"/>
+  <testcase name="dada una tarea cancelada cuando cambio su estado a en ejecicion no permite el cambio" classname="sparkle.TareaSpec" time="0.0"/>
+  <testcase name="dada una tarea cancelada cuando cambio su estado a cancelada no permite el cambio" classname="sparkle.TareaSpec" time="0.001"/>
+  <testcase name="dada una tarea cancelada cuando cambio su estado a finalizada no permite el cambio" classname="sparkle.TareaSpec" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
