@@ -7,7 +7,7 @@ class PasoDeUnaTarea extends Paso {
 	
 	def agregarTarea(Tarea tarea) {
 		vaciarTareas()
-		//super.agregarTarea()
+		super.agregarTarea(tarea)
 	}
 	
 	private def vaciarTareas() {
