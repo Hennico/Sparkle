@@ -9,6 +9,19 @@ class PasoDeUnaTareaSpec extends Specification implements DomainUnitTest<PasoDeU
 
     def cleanup() {
     }
+	def """
+		teniendo un paso vacio 
+		cuando agrego una tarea 
+		entonces el paso tiene la tarea asociada
+	""" () {
+		given: "un paso de una tarea con una tarea"
+			def paso = new PasoDeUnaTarea()
+			def tarea = new Tarea()
+		when: "agrego otra tarea"
+			paso.agregarTarea(tarea)
+		then: "el paso tiene una sola tarea"
+			paso.tareas.any { it == tarea }
+	}
 	
 	def """
 		teniendo un paso de una tarea con una tarea 
@@ -58,7 +71,7 @@ class PasoDeUnaTareaSpec extends Specification implements DomainUnitTest<PasoDeU
 		when: "agrego otra tarea"
 			paso.agregarTarea(tareaDos)
 		then: "la segunda tarea pertenece al paso"
-			paso.any { it == tareaDos }
+			paso.tareas.any { it == tareaDos }
 	}
 	
 	def """
