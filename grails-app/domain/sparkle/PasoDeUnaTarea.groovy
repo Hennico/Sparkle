@@ -2,12 +2,11 @@ package sparkle
 
 class PasoDeUnaTarea extends Paso {
 	PasoDeUnaTarea () {
-		tareas = []
-		estado = Estado.NoIniciada
+		super()
 	}
 	
 	def agregarTarea(Tarea tarea) {
-		//vaciarTareas()
+		vaciarTareas()
 		//super.agregarTarea()
 	}
 	
