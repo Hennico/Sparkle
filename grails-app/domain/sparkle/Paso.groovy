@@ -24,10 +24,6 @@ class Paso {
 	boolean permiteCambio() {
 		!pasoAnterior || pasoAnterior.estaTerminado()
 	}
-	Estado getEstado() {
-
-	return estado
-	}
 	private boolean estaTerminado() {
 		tareas.any { it.estado == Estado.Finalizada } &&
 		tareas.every { it.estado == Estado.Finalizada || it.estado == Estado.Cancelada }
