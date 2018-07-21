@@ -52,6 +52,13 @@
                 </td>
             </tr>
         </g:each>
+            <tr>
+                <td>
+                    <a href="${createLink(controller:'Proceso',action:'create')}" >
+                        Crear proceso
+                    </a>
+                </td>
+            </tr>
         </table>
     </div>
     <div id="content" role="main">
